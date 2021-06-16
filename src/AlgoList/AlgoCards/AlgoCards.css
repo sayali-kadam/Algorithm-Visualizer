@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.card{
+    margin-left: 7rem;
+    margin-top: 4rem;
+    width: 25rem;
+}
+.card:hover{
+    transform: translateY(-1rem);
+    box-shadow: 5px 20px 20px 1px #888888;
+}
+.card-title{
+    font-weight: bold;
+    margin: 1.5rem;
+    font-size: 1.7rem;
+}
+.card-img-top{
+    transform: scale(1);
+}
+.overflow{
+    overflow: hidden;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        margin: 1rem;
+        width: 15rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .card{
+        margin: 1rem;
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .card{
+        margin: 1rem;
+        width: 24rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .card{
+        margin: 1rem;
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .card{
+        margin: 1rem;
+        width: 17rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .card{
+        margin: 1rem;
+        width: 12rem;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+}
+
+.toolbar {
+    display: flex;
+    width: 94rem;
+    height: 5rem;
+    align-items: center;
+    background-color: #333;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.generate-button {
+    border-radius: 0.4rem;
+    border-width: 0.05rem;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.stop-button {
+    border-radius: 0.4rem;
+    border-width: 0.05rem;
+    color: white;
+    padding: 0.5rem;
+    width: 6rem;
+    margin: 0.5rem;
+    background-color: red;
+    cursor: pointer;
+}
+
+.sort-buttons{
+    justify-content: center;
+    margin: 1rem;
+}
+
+.app-button{
+    background-color:  rgb(219, 209, 253);
+    width: 10rem;
+    margin-left: 15px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #223f6e;
+    text-align: center;
+    padding-top: 0.7rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+  
+.app-button:focus, .generate-button:focus {
+    outline: none;
+}
+  
+.app-button:hover, .generate-button:hover {
+    color: #333;
+    background-color: #eaeaea;
+}
+
+.separator {
+    width: 0.4rem;
+    height: 5.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: -2.6rem;
+    display: inline-block;
+}
+/********************************************** ToolBar ended ***********************************************/
+
+.array-container {
+    align-items: flex-end;
+    display: flex;
+    margin-top: 1.6rem;
+}
+  
+.array-bar {
+    border-radius: 0.5rem;
+    margin: 0.15rem;
+    width: 0.5rem;
+    background-color: rebeccapurple;
+    display: inline-block;
+}
+/********************************************** Body of visualization ended ***********************************************/
