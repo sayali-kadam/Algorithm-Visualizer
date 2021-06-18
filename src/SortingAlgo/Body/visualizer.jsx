@@ -4,6 +4,7 @@ import { getMergeSortAlgorithm } from '../algorithms/MergeSort';
 import { getInsertionSortAlgorithm } from '../algorithms/InsertionSort';
 import { getQuickSortAlgorithm } from '../algorithms/QuickSort';
 import { getSelectionSortAlgorithm } from '../algorithms/SelectionSort';
+import { getHeapSortAlgorithm } from '../algorithms/HeapSort';
 import swal from 'sweetalert';
 import Swal from 'sweetalert2';
 
@@ -72,13 +73,20 @@ export default function Visualizer(props) {
   }
 
   //Heap Sort 
-  function heapSort(){}
+  function heapSort(){
+    swal({
+      title: "Heap Sort",
+      text: "Time complexity: O(nlogn)\nSpace complexity: O(1)\nStability: Unstable\n\nAlgorithm:\n 1. Suppose an array consists of N distinct elements in memory\n 2. To begin with, a heap is built by moving the elements to its proper position within the array.\n 3. This means that as the elements are traversed from the array the root, its left child, its right child are filled in respectively forming a binary tree.\n 4. In the second phase, the root element is eliminated from the heap by moving it to the end of the array.\n 5. The balance elements may not be a heap.\n 6. So again steps 1 and 2 are repeated for the balance elements.\n 7. The procedure is continued until all the elements are eliminated."
+    })
+    const animations = getHeapSortAlgorithm(arr);
+    animateArrayUpdate(animations);
+  }
 
   //Quick sort
   function quickSort(){
     swal({
       title: "Quick Sort",
-      text: "Time complexity: O(nlogn)\nSpace complexity: O(n)\nStability: Stable\n\nAlgorithm: \npick pivot in different ways:\n  1.  Always pick first element as pivot.\n  2. Always pick last element as pivot (implemented below)\n  3. Pick a random element as pivot.\n  4. Pick median as pivot.\nTechnically, quick sort follows the below steps:\n  Step 1 − Make any element as pivot\n  Step 2 − Partition the array on the basis of pivot\n  Step 3 − Apply quick sort on left partition recursively\n  Step 4 − Apply quick sort on right partition recursively"
+      text: "Time complexity: O(nlogn)\nSpace complexity: O(logn)\nStability: Stable\n\nAlgorithm:\npick pivot in different ways:\n  1.  Always pick first element as pivot.\n  2. Always pick last element as pivot (implemented below)\n  3. Pick a random element as pivot.\n  4. Pick median as pivot.\nTechnically, quick sort follows the below steps:\n  Step 1 − Make any element as pivot\n  Step 2 − Partition the array on the basis of pivot\n  Step 3 − Apply quick sort on left partition recursively\n  Step 4 − Apply quick sort on right partition recursively"
     })
     const animations = getQuickSortAlgorithm(arr);
     animateArrayUpdate(animations);
