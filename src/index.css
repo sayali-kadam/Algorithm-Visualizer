@@ -8,6 +8,7 @@ body {
   background-image: linear-gradient(to left, #a5c4f3, #f3cbf1);
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 code {
