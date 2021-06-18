@@ -25,17 +25,6 @@
     cursor: pointer;
 }
 
-.stop-button {
-    border-radius: 0.4rem;
-    border-width: 0.05rem;
-    color: white;
-    padding: 0.5rem;
-    width: 6rem;
-    margin: 0.5rem;
-    background-color: red;
-    cursor: pointer;
-}
-
 .sort-buttons{
     justify-content: center;
     margin: 1rem;
