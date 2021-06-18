@@ -16,7 +16,7 @@ const SearchBar = (props) => {
             <Dropdown.Item href="/Sorting">Selection Sort</Dropdown.Item>
             <Dropdown.Item href="/Sorting">Heap Sort</Dropdown.Item>
             <Dropdown.Item href="/Sorting">Quick Sort</Dropdown.Item>
-            <Dropdown.Item href="/Sorting">Mearge Sort</Dropdown.Item>
+            <Dropdown.Item href="/Sorting">Merge Sort</Dropdown.Item>
         </Dropdown.Menu>
         </Dropdown>
     );
