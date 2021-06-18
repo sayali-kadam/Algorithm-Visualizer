@@ -39,7 +39,7 @@ export default function Visualizer(props) {
     setArr(arr);
   }
 
-  //Merege sort
+  //Merge sort
   function mergeSort() {
     Swal.fire({
       title: "Merge Sort",
@@ -84,7 +84,7 @@ export default function Visualizer(props) {
     animateArrayUpdate(animations);
   }
 
-  //Animation of array
+  //Animation of the array
   function animateArrayUpdate(animations) {
     if (isSorting) return;
     setIsSorting(true);
@@ -126,7 +126,7 @@ export default function Visualizer(props) {
     }, DELAY * 2);
   }
 
-  //Current changes in the height of the bars
+  //Final sorting checking
   function animateSortedArray() {
     const arrayBars = containerRef.current.children;
     for (let i = 0; i < arrayBars.length; i++) {
