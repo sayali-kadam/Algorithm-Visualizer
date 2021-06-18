@@ -8,7 +8,7 @@ import swal from 'sweetalert';
 import Swal from 'sweetalert2';
 
 //Global vaiables
-const ARR_LEN = 100;
+const ARR_LEN = 50;
 const MIN_NUM = 5;
 const MAX_NUM = 70;
 const DELAY = 250;
@@ -176,9 +176,6 @@ export default function Visualizer(props) {
               </button>
               <div className="separator"></div>
             </div>
-            <button className="stop-button">
-                Stop !!
-            </button>
         </div>
         <div className="array-container" ref={containerRef}>
             {arr.map((barHeight, index) => (
